@@ -1,0 +1,2 @@
+module GenioHelper
+end

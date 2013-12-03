@@ -1,0 +1,12 @@
+<h1><%= @cabecera %></h1>
+<p>No pude adivinar tu animal! Ayúdame y a la próxima lo acertaré!!</p>
+
+<%= form_tag genio_learn_url do%>
+	¿Que animal era?
+	<%= text_field_tag :animal, nil, :placeholder => '¿Que animal era?' %><br/>
+	¿Que caracteriza a este animal respecto al <%= @animal %>?
+	<%= text_field_tag :diferencia, nil, :placeholder => "¿Que caracteriza a este animal respecto al #{@animal}?" %><br/>
+	Si preguntáramos al <%= @animal %> por esta característica, ¿cual sería tu respuesta (si/no)?
+	<%= text_field_tag :respuesta, nil, :placeholder => "Si preguntáramos al #{@animal} por esta característica, cual sería tu respuesta (si/no)?"%><br/>
+	<%= submit_tag "Aprende!" %>
+<% end %>

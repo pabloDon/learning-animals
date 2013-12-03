@@ -1,0 +1,4 @@
+<h1>¿Es un <%= @pregunta %>?</h1>
+
+<%= link_to "SI", :controller => "genio", :action => :respuesta_final, :respuesta => "si" %>
+<%= link_to "NO", :controller => "genio", :action => :respuesta_final, :respuesta => "no" %>
